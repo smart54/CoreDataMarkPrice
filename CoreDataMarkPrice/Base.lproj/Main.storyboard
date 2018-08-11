@@ -21,7 +21,7 @@
         <!--GoalsVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="GoalsVC" customModule="CoreDataMarkPrice" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GoalVC" id="BYZ-38-t0r" customClass="GoalsVC" customModule="CoreDataMarkPrice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -188,7 +188,7 @@
         <!--Create GoalVC-->
         <scene sceneID="vVe-gY-zTh">
             <objects>
-                <viewController id="yno-9u-3AB" customClass="CreateGoalVC" customModule="CoreDataMarkPrice" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CreateGoalVC" id="yno-9u-3AB" customClass="CreateGoalVC" customModule="CoreDataMarkPrice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2E6-yg-EcS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -305,14 +305,11 @@
                             <constraint firstItem="8I7-Lh-SLm" firstAttribute="trailing" secondItem="Ytd-Q9-7GY" secondAttribute="trailing" constant="20" id="OEo-IJ-DSs"/>
                             <constraint firstItem="MUY-8S-7ya" firstAttribute="bottom" secondItem="8I7-Lh-SLm" secondAttribute="bottom" id="PPj-qo-ksy"/>
                             <constraint firstItem="XFv-8A-ikF" firstAttribute="leading" secondItem="8I7-Lh-SLm" secondAttribute="leading" id="RwD-fP-lnN"/>
+                            <constraint firstItem="MUY-8S-7ya" firstAttribute="trailing" secondItem="8I7-Lh-SLm" secondAttribute="trailing" id="SwQ-h4-jfK"/>
                             <constraint firstItem="XFv-8A-ikF" firstAttribute="trailing" secondItem="8I7-Lh-SLm" secondAttribute="trailing" id="U2g-aC-vjP"/>
                             <constraint firstItem="Ytd-Q9-7GY" firstAttribute="top" secondItem="XFv-8A-ikF" secondAttribute="bottom" constant="20" id="cGF-Tx-0K1"/>
-                            <constraint firstItem="MUY-8S-7ya" firstAttribute="trailing" secondItem="8I7-Lh-SLm" secondAttribute="trailing" id="d4w-QT-HqY"/>
                             <constraint firstItem="Ytd-Q9-7GY" firstAttribute="leading" secondItem="8I7-Lh-SLm" secondAttribute="leading" constant="20" id="dgD-pt-07f"/>
-                            <constraint firstItem="MUY-8S-7ya" firstAttribute="leading" secondItem="8I7-Lh-SLm" secondAttribute="leading" id="kqS-Gu-TFu"/>
                             <constraint firstItem="Ytd-Q9-7GY" firstAttribute="top" secondItem="XFv-8A-ikF" secondAttribute="bottom" constant="20" id="oPy-ba-0mJ"/>
-                            <constraint firstItem="MUY-8S-7ya" firstAttribute="trailing" secondItem="8I7-Lh-SLm" secondAttribute="trailing" id="wx3-yW-rWQ"/>
-                            <constraint firstItem="MUY-8S-7ya" firstAttribute="bottom" secondItem="8I7-Lh-SLm" secondAttribute="bottom" id="zOa-XT-n6b"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8I7-Lh-SLm"/>
                     </view>

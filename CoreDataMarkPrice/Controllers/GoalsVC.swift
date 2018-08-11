@@ -31,8 +31,12 @@ class GoalsVC: UIViewController {
 //    }
 
     @IBAction func addGoalBtnPressed(_ sender: Any) {
-        
-        print("buton basıldı")
+        // storyboard a verdiğimiz id yi giriyoruz. dikkat else bloğu guard let ile birlikte kullanılmak zorunda...
+        guard let createGoalVC = storyboard?.instantiateViewController(withIdentifier: "CreateGoalVC") else{
+            return 
+        }
+        // yukarıda oluşturduğumuz nesneyi giriyoruz. bakcbtn kısmında da dismissDetail() fonksiyonumuzu çağırıyoruz.
+        presentDetail(createGoalVC)
     }
     
 }

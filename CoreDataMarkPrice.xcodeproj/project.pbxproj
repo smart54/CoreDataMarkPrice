@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B4131E1E211E7A41004BABC2 /* UIButtonExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4131E1D211E7A41004BABC2 /* UIButtonExt.swift */; };
 		B4E69126211C2A3E00E633CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E69125211C2A3E00E633CB /* AppDelegate.swift */; };
 		B4E69128211C2A3E00E633CB /* GoalsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E69127211C2A3E00E633CB /* GoalsVC.swift */; };
 		B4E6912B211C2A3E00E633CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4E69129211C2A3E00E633CB /* Main.storyboard */; };
@@ -16,9 +17,12 @@
 		B4E6913F211C751E00E633CB /* GoalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E6913E211C751E00E633CB /* GoalCell.swift */; };
 		B4E69141211C8FDB00E633CB /* GoalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E69140211C8FDB00E633CB /* GoalType.swift */; };
 		B4E69143211C9EDF00E633CB /* CreateGoalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E69142211C9EDF00E633CB /* CreateGoalVC.swift */; };
+		B4E69146211D367600E633CB /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E69145211D367600E633CB /* UIViewControllerExt.swift */; };
+		B4E69148211D7D9900E633CB /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E69147211D7D9900E633CB /* UIViewExt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B4131E1D211E7A41004BABC2 /* UIButtonExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExt.swift; sourceTree = "<group>"; };
 		B4E69122211C2A3E00E633CB /* CoreDataMarkPrice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataMarkPrice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4E69125211C2A3E00E633CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4E69127211C2A3E00E633CB /* GoalsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsVC.swift; sourceTree = "<group>"; };
@@ -30,6 +34,8 @@
 		B4E6913E211C751E00E633CB /* GoalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalCell.swift; sourceTree = "<group>"; };
 		B4E69140211C8FDB00E633CB /* GoalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalType.swift; sourceTree = "<group>"; };
 		B4E69142211C9EDF00E633CB /* CreateGoalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGoalVC.swift; sourceTree = "<group>"; };
+		B4E69145211D367600E633CB /* UIViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
+		B4E69147211D7D9900E633CB /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +102,9 @@
 		B4E6913C211C2AD400E633CB /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				B4E69145211D367600E633CB /* UIViewControllerExt.swift */,
+				B4E69147211D7D9900E633CB /* UIViewExt.swift */,
+				B4131E1D211E7A41004BABC2 /* UIButtonExt.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -185,6 +194,9 @@
 				B4E69141211C8FDB00E633CB /* GoalType.swift in Sources */,
 				B4E69128211C2A3E00E633CB /* GoalsVC.swift in Sources */,
 				B4E6912E211C2A3E00E633CB /* CoreDataMarkPrice.xcdatamodeld in Sources */,
+				B4E69148211D7D9900E633CB /* UIViewExt.swift in Sources */,
+				B4E69146211D367600E633CB /* UIViewControllerExt.swift in Sources */,
+				B4131E1E211E7A41004BABC2 /* UIButtonExt.swift in Sources */,
 				B4E69126211C2A3E00E633CB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -19,25 +19,40 @@ class CreateGoalVC: UIViewController {
     
     @IBOutlet weak var ileriButonu: UIButton!
     
+    var goalType : GoalType = .shortTerm
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        // neden IBOutlet?
+        // ekran yüklendiğinde keyboard yukarı kalktığı gibi ileri butonu da yukarı kalkacak.
+        ileriButonu.bindTheKeyboard()
+        
+       
+        kısaVade.setSelectedColor()
+        uzunVade.setDeselectedColor()
     }
 
     @IBAction func shortTermBtn(_ sender: UIButton) {
+        
+        goalType = .shortTerm
+        kısaVade.setSelectedColor()
+        uzunVade.setDeselectedColor()
     }
     
     @IBAction func longTermBtn(_ sender: UIButton) {
+        
+        goalType = .longTerm
+        kısaVade.setDeselectedColor()
+        uzunVade.setSelectedColor()
     }
     
     @IBAction func nextbtn(_ sender: UIButton) {
     }
     
     @IBAction func backButtonWasPressed(_ sender: UIButton) {
-        // geri sayfaya dönmek için aşağıdaki satırı yazmamız gerekiyor. 
-        dismiss(animated: true, completion: nil)
+        // geri sayfaya dönmek için aşağıdaki satırı yazmamız gerekiyor.
+        dismissDetail()
     }
     
     
