@@ -10,13 +10,13 @@ import UIKit
 
 
 extension UIView {
-    
+
     // next butonunun keyboard ile yukarı kaldırılması olayını bu fonksiyon gerçekleştiriyor.
     func bindTheKeyboard(){
-        
+
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChange(_:)), name: NSNotification.Name.UIKeyboardWillChangeFrame, object: nil)
     }
-    
+
     // bir bug var. her keyboard çağrıldığına next butonu biraz daha yukarı çıkıyor. bunun çözülmesi gerekiyor
     @objc func keyboardWillChange(_ notification: NSNotification) {
         // notification içinde bir userInfo diye bir dictionary var ve bu optional. bunu force to unwrap yapıyoruz.
@@ -27,12 +27,12 @@ extension UIView {
         let startingFrame = (notification.userInfo![UIKeyboardFrameBeginUserInfoKey] as! NSValue).cgRectValue
         // bu da end frame in değerlerini cgRect türünde döner bize.
         let endingFrame = (notification.userInfo![UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
-        
+
         // iki frame in y koordinatı düzlemindeki farklarını alıyoruz.
         let deltaY = endingFrame.origin.y - startingFrame.origin.y
         // bu kısımda animasyonu icra ediyoruz.
         UIView.animateKeyframes(withDuration: duration, delay: 0.0, options: UIViewKeyframeAnimationOptions(rawValue: curve), animations: {
-            // keyboarddaki değişim kadar butonu animate ettiriyoruz. 
+            // keyboarddaki değişim kadar butonu animate ettiriyoruz.
             self.frame.origin.y += deltaY
         }, completion: nil)
 

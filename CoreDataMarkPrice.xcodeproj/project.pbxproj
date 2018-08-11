@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B4131E1E211E7A41004BABC2 /* UIButtonExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4131E1D211E7A41004BABC2 /* UIButtonExt.swift */; };
+		B4248965211EDEC800E34348 /* FinishGoalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4248964211EDEC800E34348 /* FinishGoalVC.swift */; };
 		B4E69126211C2A3E00E633CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E69125211C2A3E00E633CB /* AppDelegate.swift */; };
 		B4E69128211C2A3E00E633CB /* GoalsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E69127211C2A3E00E633CB /* GoalsVC.swift */; };
 		B4E6912B211C2A3E00E633CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4E69129211C2A3E00E633CB /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		B4131E1D211E7A41004BABC2 /* UIButtonExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExt.swift; sourceTree = "<group>"; };
+		B4248964211EDEC800E34348 /* FinishGoalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishGoalVC.swift; sourceTree = "<group>"; };
 		B4E69122211C2A3E00E633CB /* CoreDataMarkPrice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataMarkPrice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4E69125211C2A3E00E633CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4E69127211C2A3E00E633CB /* GoalsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsVC.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 			children = (
 				B4E69127211C2A3E00E633CB /* GoalsVC.swift */,
 				B4E69142211C9EDF00E633CB /* CreateGoalVC.swift */,
+				B4248964211EDEC800E34348 /* FinishGoalVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4248965211EDEC800E34348 /* FinishGoalVC.swift in Sources */,
 				B4E6913F211C751E00E633CB /* GoalCell.swift in Sources */,
 				B4E69143211C9EDF00E633CB /* CreateGoalVC.swift in Sources */,
 				B4E69141211C8FDB00E633CB /* GoalType.swift in Sources */,

@@ -33,7 +33,7 @@ extension UIViewController {
         // Core Animation(CA) kütüphanesini initialize yapıyoruz
         let transition = CATransition()
         // animasyonun süresi
-        transition.duration = 3
+        transition.duration = 1
         // animasyon türü
         transition.type = kCATransitionPush
         // nereden nereye hareket edecek!
