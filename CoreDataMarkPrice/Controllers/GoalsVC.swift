@@ -105,7 +105,7 @@ extension GoalsVC: UITableViewDataSource, UITableViewDelegate {
             tableView.deleteRows(at: [indexPath], with: .automatic)
         }
         
-        let addAction = UITableViewRowAction(style: .normal, title: "EKLE") { (rowAction, indexPath) in
+        let addAction = UITableViewRowAction(style: .normal, title: "SAYDIR") { (rowAction, indexPath) in
             
             self.setProgress(atIndexPath: indexPath)
             // bütün tabloyu yüklemeye gerek yok. sadece indexin bulunduğu tabloyu yüklüyoruz.
