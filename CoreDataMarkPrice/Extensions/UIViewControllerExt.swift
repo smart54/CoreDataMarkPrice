@@ -17,7 +17,7 @@ extension UIViewController {
         // Core Animation(CA) kütüphanesini initialize yapıyoruz
         let transition = CATransition()
         // animasyonun süresi
-        transition.duration = 2
+        transition.duration = 0.5
         // animasyon türü
         transition.type = kCATransitionPush
         // nereden nereye hareket edecek!
@@ -28,12 +28,28 @@ extension UIViewController {
         present(viewControllerToPresent, animated: false, completion: nil)
     }
     
+    func presentSecondaryDetail(_ viewControllerPresent: UIViewController){
+        // Yukarıdakinin aynısı
+        let transition = CATransition()
+        transition.duration = 0.5
+        transition.type = kCATransitionPush
+        transition.subtype = kCATransitionFromRight
+        
+        guard let presentedViewController = presentedViewController else { return }
+        // yukarıdaki özellikler ile varsayılan dismiss fonksiyonunu override ediyoruz.
+        presentedViewController.dismiss(animated: false) {
+            
+            self.view.window?.layer.add(transition, forKey: kCATransition)
+            self.present(viewControllerPresent, animated: false, completion: nil)
+        }
+    }
+    
     // yukarıdaki satırlardan sadece "kCATransitionFromLeft" komutu değişti. back butona basıldığında soldan hareket edecek.
     func dismissDetail() {
         // Core Animation(CA) kütüphanesini initialize yapıyoruz
         let transition = CATransition()
         // animasyonun süresi
-        transition.duration = 1
+        transition.duration = 0.5
         // animasyon türü
         transition.type = kCATransitionPush
         // nereden nereye hareket edecek!

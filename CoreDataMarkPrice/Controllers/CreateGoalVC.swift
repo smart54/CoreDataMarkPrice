@@ -59,7 +59,8 @@ class CreateGoalVC: UIViewController, UITextViewDelegate {
             
             finishGoalVC.initData(description: goalTextView.text!, type: goalType)
             // UIViewControllerExt.swift dosyasına göz at aşağıdaki kod detayları için
-            presentDetail(finishGoalVC)
+            // Bu kısım hemen hemen hiç anlaşılmadı. İyice araştır. 
+            presentingViewController?.presentSecondaryDetail(finishGoalVC)
         }
         
     }
